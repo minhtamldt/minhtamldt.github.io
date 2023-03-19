@@ -1,5 +1,5 @@
 ### Chứa các tài liệu đã học của tôi
 
-- Maui/Xamarin
+- [Maui/Xamarin](flutter/index_maui.md)
 
-- [Flutter](flutter/widgets/column.md)
+- [Flutter](flutter/index_flutter.md)
