@@ -1,6 +1,6 @@
 ### COLUMN
 
-1. **Khái niệm**
+1. **KHÁI NIỆM**
    
    - Widget dùng để sắp xếp các widget con theo chiều dọc
    
@@ -8,7 +8,7 @@
    
    ✍️ Ví dụ : 
    
-   ```
+   ```dart
    Column(
      children: <Widget>[
        Text('Widget con 1'),
@@ -18,10 +18,10 @@
    )
    ```
 
-2. **Thuộc tính**
+2. **THUỘC TÍNH**
    
-   | STT | Tên Thuộc Tính     | Mô Tả                                                                                                                                                                                                                                                                                                                                                  |
-   |:---:|:------------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-   | 1   | mainAxisAlignment  | Chỉ định cách sắp xếp các widget con theo chiều dọc<br/>- **start (default)** : **các widget nằm trên** cùng của cột.<br/>- **center** : các widget nằm trên cùng của cột.<br/>- **end** : các widget nằm trên cùng của cột.<br/>- **spaceBetween** : các widget nằm trên cùng của cột.<br/>- **spaceAround** : các widget nằm trên cùng của cột.<br/> |
-   | 2   | crossAxisAlignment |                                                                                                                                                                                                                                                                                                                                                        |
-   | 3   | mainAxisSize       | chỉ định kích thước của Column trong chiều dọc, <br/>Các giá trị có thể sử dụng là **MainAxisSize.max** (mặc định) và **MainAxisSize.min.**                                                                                                                                                                                                            |
+   | STT | Thuộc Tính         | Mô Tả                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+   |:---:|:------------------ |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | 1   | mainAxisAlignment  | Chỉ định cách sắp xếp các widget con theo chiều **dọc**<br/>- **start (default)** : các widget nằm trên cùng của cột.<br/>- **center** : nằm giữa cột <br/>- **end** : nằm dưới cùng của cột <br/>- **spaceBetween** : các widget có khoảng cách với nhau (các khoảng cách đều nhau)<br/>- **spaceAround** : bên trên và bên dưới widget đều có khoảng cách, nếu các widget đối diện nhau thì khoảng cách này **không tăng lên**<br/>- **spaceEvenly** : bên trên và bên dưới widget đều có khoảng cách, nếu các widget đối diện nhau thì khoảng cách này **tăng lên** |
+   | 2   | crossAxisAlignment | Chỉ định cách sắp xếp các widget con theo chiều **ngang**<br/>- **start (default)** : các widget nằm bên trái.<br/>- **center** : nằm giữa cột <br/>- **end** : nằm bên phải cột <br/>- **stretch** : widget con sẽ được kéo dãn theo chiều ngang của cột để lấp đầy không gian<br/>- **baseline** : widget con sẽ được kéo dãn theo chiều ngang của cột để lấp đầy không gian**<br/>                                                                                                                                                                                  |
+   | 3   | mainAxisSize       | chỉ định kích thước của Column trong chiều dọc, <br/>Các giá trị có thể sử dụng là **MainAxisSize.max** (mặc định) và **MainAxisSize.min.**                                                                                                                                                                                                                                                                                                                                                                                                                            |
