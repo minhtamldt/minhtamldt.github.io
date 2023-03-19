@@ -8,41 +8,20 @@
    
    ✍️ Ví dụ : 
    
-   `Column(
+   ```
+   Column(
      children: <Widget>[
        Text('Widget con 1'),
        Text('Widget con 2'),
        Text('Widget con 3'),
      ],
-   )`
+   )
+   ```
 
 2. **Thuộc tính**
-- **mainAxisAlignment** : Chỉ định cách sắp xếp các widget con theo chiều dọc
-  
-  + start (default) : các widget nằm trên cùng của cột.
-  
-  + center : các widget nằm giữa các cột
-  
-  + end: các widget nằm dưới cột
-  
-  + spaceBetween: 
-  
-  + spaceAround:
-  
-  + spaceEvenly: 
-
-- **crossAxisAlignment** : Chỉ định cách sắp xếp các widget con theo chiều ngang
-  
-  - start (default) : 
-  
-  - center : 
-  
-  - end: 
-  
-  - spaceBetween:
-  
-  - spaceAround:
-  
-  - spaceEvenly:
-
-- **mainAxisSize** : chỉ định kích thước của Column trong chiều dọc, Các giá trị có thể sử dụng là MainAxisSize.max (mặc định) và MainAxisSize.min.
+   
+   |     |                    |                                                                                                                                                                                                                                                                                                                                                    |
+   | --- | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | 1   | mainAxisAlignment  | Chỉ định cách sắp xếp các widget con theo chiều dọc<br/>- **start (default)** : các widget nằm trên cùng của cột.<br/>- **center** : các widget nằm trên cùng của cột.<br/>- **end** : các widget nằm trên cùng của cột.<br/>- **spaceBetween** : các widget nằm trên cùng của cột.<br/>- **spaceAround** : các widget nằm trên cùng của cột.<br/> |
+   | 2   | crossAxisAlignment |                                                                                                                                                                                                                                                                                                                                                    |
+   | 3   | mainAxisSize       | chỉ định kích thước của Column trong chiều dọc, <br/>Các giá trị có thể sử dụng là **MainAxisSize.max** (mặc định) và **MainAxisSize.min.**                                                                                                                                                                                                        |
