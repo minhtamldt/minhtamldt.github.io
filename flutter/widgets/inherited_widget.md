@@ -76,7 +76,11 @@
        }
      }
      ```
-     
-     
+
+4. **Method  `updateShouldNotify`**
+   
+   - Khi tạo một subclass từ `InheritedWidget` , method này bắt buộc override.
+   
+   - Nó xác định liệu rằng những widget con của nó có bị build lại khi nó được build lại hay không. Để tránh việc các widget luôn bị build lại ảnh hưởng performace
 
     

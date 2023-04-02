@@ -8,7 +8,7 @@ II. WIDGETS
 
 2. [Row](widgets/row.md)
 
-3. [InheritedWidget](orthers/inherited_widget.md)
+3. [InheritedWidget](others/inherited_widget.md)
 
 III. BLOC
 
@@ -19,4 +19,3 @@ III. BLOC
 IV. OTHERS
 
 1. [BuildContext](orthers/build_context.md)
-2. 
