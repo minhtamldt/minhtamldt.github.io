@@ -19,3 +19,7 @@ III. BLOC
 IV. OTHERS
 
 1. [BuildContext](orthers/build_context.md)
+
+VI. Tools
+
+1. [Tập hợp extension code flutter trên VSCode](tools/extension_vscode.md)
