@@ -16,6 +16,8 @@ III. BLOC
 
 2. [StreamController](bloc/stream_controller.md)
 
+3. [Provider](bloc/provider/index_provider.md)
+
 IV. OTHERS
 
 1. [BuildContext](orthers/build_context.md)
