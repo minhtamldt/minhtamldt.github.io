@@ -1,6 +1,6 @@
 # Phần 1: Quản lý state bằng Provider trong Flutter
 
-###### 1. Thêm Thư Viện Provider
+### 1. Thêm Thư Viện Provider
 
 - Bước 1:  Vào file `pubspec.yaml` , tìm kiếm `dependencies` và thêm `provider`
 
@@ -13,7 +13,7 @@ dependencies:
 
 -  Bước 2: Save file, thực hiện Pug Get để kéo thư viện về.
 
-###### 2. Phân Tích Cơ Chế Hoạt Động.
+### 2. Phân Tích Cơ Chế Hoạt Động.
 
 Chúng ta lấy ví dụ về chuỗi cung ứng hàng hoá gồm 3 đối tượng tham gia: 
 
@@ -27,7 +27,7 @@ Chúng ta lấy ví dụ về chuỗi cung ứng hàng hoá gồm 3 đối tư�
 
 + Người sử dụng `(Consumer, context.watch/context.read)`
 
-###### 3. Ví dụ
+### 3. Ví dụ
 
 ```dart
 class CounterProvider extend ChangeNotifer {
@@ -81,3 +81,5 @@ onPressed:() {
     context.read<CounterProvider>().add()
 }
 ```
+
+[Sources]([save code by minhtamldt · Pull Request #3 · minhtamldt/flutter_origin · GitHub](https://github.com/minhtamldt/flutter_origin/pull/3))
