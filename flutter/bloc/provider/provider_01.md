@@ -82,4 +82,4 @@ onPressed:() {
 }
 ```
 
-[Sources]([save code by minhtamldt · Pull Request #3 · minhtamldt/flutter_origin · GitHub](https://github.com/minhtamldt/flutter_origin/pull/3))
+[Sources](https://github.com/minhtamldt/flutter_origin/pull/3)
