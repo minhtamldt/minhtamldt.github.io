@@ -2,6 +2,8 @@
 
 I. CÀI ĐẶT MÔI TRƯỜNG
 
+1. [Setup Environment](environment/setup.md)
+
 II. WIDGETS
 
 1. [Cloumn](widgets/column.md)
