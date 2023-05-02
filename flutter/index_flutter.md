@@ -27,6 +27,7 @@
 ## V. OTHERS
 
 1. [BuildContext](orthers/build_context.md)
+2. [Consumer](orthers/consumer.md)
 
 ## VI. Tools
 
