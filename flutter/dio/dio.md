@@ -1,4 +1,6 @@
-# [DIO]([dio | Dart Package](https://pub.dev/packages/dio/install))
+# DIO
+
+install : https://pub.dev/packages/dio/install
 
 ### 1. Giới Thiệu
 
@@ -94,3 +96,100 @@
   ```
   
   - `onSendProgress` : Được gọi khi gửi yêu cầu, giúp theo dõi tiến trình gửi dữ liệu.
+
+### 5. Đối tượng Response
+
+- Nó đại diện cho kết quả trả về từ server. Nó bao gồm.
+  
+  - `status code` : trạng thái của request.
+  
+  - `header`  : những thông tin liên quan đến request.
+  
+  - `data` : phần dữ liệu chính 
+    
+    
+  
+  ```dart
+  import 'package:dio/dio.dart';
+  
+  void getData() async {
+    try {
+      Response response = await Dio().get('https://jsonplaceholder.typicode.com/todos/1');
+      print(response.statusCode); // In ra mã trạng thái, ví dụ 200
+      print(response.headers); // In ra tiêu đề
+      print(response.data); // In ra dữ liệu phản hồi từ server
+    } catch (e) {
+      print(e);
+    }
+  }
+  ```
+
+### 6. Thông Tin Thêm
+
+1. LogInterceptor
+   
+   - Là một interceptor được sử dụng để ghi log các request và response.
+   
+   - Khi sử dụng `LogInterceptor`, mỗi lần gửi một request bằng `Dio`, ta sẽ nhận được các thông tin như sau: 
+     
+     - Thời điểm bắt đầu gửi request.
+     
+     - Request method, URL, headers, body.
+     
+     - Thời điểm nhận được response.
+     
+     - Response status code, headers, body.
+     
+     - Thời gian request/response.
+   
+   - Để sử dụng `LogInterceptor`, ta có thể tạo một instance mới và thêm nó vào danh sách các interceptors của `Dio` như sau:
+   
+   ```dart
+   import 'package:dio/dio.dart';
+   
+   void main() {
+     final dio = Dio();
+     dio.interceptors.add(LogInterceptor());
+     // ...
+   }
+   ```
+   
+   - Sau đó, mỗi lần gửi request bằng `Dio`, ta sẽ nhận được các thông tin log được ghi lại.
+
+2. InterceptorsWrapper
+   
+   - Cung cấp một cách tiện lợi để định nghĩa các interceptors bằng cách kế thừa và override các phương thức.
+   
+   - Bạn có thể định nghĩa một interceptor bao gồm nhiều phương thức như :
+     
+     - onRequest
+     
+     - onResponse
+     
+     - onError
+     
+     - onRequestError
+     
+     - onResponseError
+   
+   - Ví dụ, nếu bạn muốn thêm header cho tất cả các request, bạn có thể định nghĩa một interceptor bằng cách kế thừa `InterceptorsWrapper` và override phương thức `onRequest` như sau :
+     
+     ```dart
+     import 'package:dio/dio.dart';
+     
+     class MyInterceptor extends InterceptorsWrapper {
+       @override
+       Future onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
+         options.headers.addAll({"Authorization": "Bearer $myToken"});
+         return super.onRequest(options, handler);
+       }
+     }
+     
+     void main() {
+       final dio = Dio();
+       dio.interceptors.add(MyInterceptor());
+       // ...
+     }
+     ```
+     
+     
