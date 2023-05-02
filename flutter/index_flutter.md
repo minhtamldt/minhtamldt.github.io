@@ -1,10 +1,10 @@
-**FLUTTER**
+# FLUTTER
 
-I. CÀI ĐẶT MÔI TRƯỜNG
+## I. CÀI ĐẶT MÔI TRƯỜNG
 
 1. [Setup Environment](environment/setup.md)
 
-II. WIDGETS
+## II. WIDGETS
 
 1. [Cloumn](widgets/column.md)
 
@@ -12,7 +12,7 @@ II. WIDGETS
 
 3. [InheritedWidget](widgets/inherited_widget.md)
 
-III. BLOC
+## III. BLOC
 
 1. Future
 
@@ -20,10 +20,14 @@ III. BLOC
 
 3. [Provider](bloc/provider/index_provider.md)
 
-IV. OTHERS
+## IV. DIO
+
+1. [Dio](dio/dio.md)
+
+## V. OTHERS
 
 1. [BuildContext](orthers/build_context.md)
 
-VI. Tools
+## VI. Tools
 
 1. [Tập hợp extension code flutter trên VSCode](tools/extension_vscode.md)
