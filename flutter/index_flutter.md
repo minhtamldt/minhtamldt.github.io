@@ -12,6 +12,14 @@
 
 3. [InheritedWidget](widgets/inherited_widget.md)
 
+4. [IgnorePointer](widgets/ignore_pointer.md)
+
+5. [LayoutBuilder](widgets/layout_builder.md)
+
+6. [ConstrainedBox](widgets/constrained_box.md)
+
+7. [IntrinsicHeight](widgets/intrinsic_height.md)
+
 ## III. BLOC
 
 1. Future
@@ -28,6 +36,7 @@
 
 1. [BuildContext](orthers/build_context.md)
 2. [Consumer](orthers/consumer.md)
+3. [SchedulerBinding](orthers/scheduler_binding.md)
 
 ## VI. Tools
 
