@@ -20,6 +20,8 @@
 
 7. [IntrinsicHeight](widgets/intrinsic_height.md)
 
+8. [Container](widgets/container.md)
+
 ## III. BLOC
 
 1. Future
@@ -37,6 +39,7 @@
 1. [BuildContext](orthers/build_context.md)
 2. [Consumer](orthers/consumer.md)
 3. [SchedulerBinding](orthers/scheduler_binding.md)
+4. [BoxConstraints](orthers/box_constraints.md)
 
 ## VI. Tools
 
