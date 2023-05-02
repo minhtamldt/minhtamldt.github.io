@@ -30,6 +30,8 @@
 
 3. [Provider](bloc/provider/index_provider.md)
 
+4. [StreamProvider](bloc/provider/stream_provider.md)
+
 ## IV. DIO
 
 1. [Dio](dio/dio.md)
